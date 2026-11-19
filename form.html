@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hvad er dit niveau? | Pace & People</title>
+  <link rel="stylesheet" href="./starter.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./imgs/favicon.ico">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="site-logo" href="index.html"> <img src="./imgs/pace_people_logo.webp" alt="Pace & people">
+      </a>
+      <nav class="site-nav">
+        <button popovertarget="menu" type="button">Menu</button>
+        <ul class="menu-list" id="menu" popover>
+          <li><a class="menu-item" href="./index.html" aria-current="page">Forside</a></li>
+          <li><a class="menu-item" href="./svg.html">Program</a></li>
+          <li><a class="menu-item" href="./form.html">Niveau</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="form-page">
+
+      <header class="form-intro">
+        <h1>HVAD ER DIT NIVEAU?</h1>
+      </header>
+
+      <form action="./opsamling.html" method="get">
+        <div class="form-group">
+          <label class="form-overskrift" for="nickname">
+            NAVN
+          </label>
+          <input id="nickname" type="text" name="nickname" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-overskrift" for="hype">
+            HVOR HURTIGT KAN DU LØBE 5KM?
+          </label>
+
+          <input id="hype" type="range" name="hype" min="15" max="50" value="35" step="1">
+          <div class="slider-labels">
+            <span>15 min</span>
+            <span>50 min+</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+            <legend class="form-overskrift">
+              HVILKET TERRÆN VIL DU LØBE I?
+            </legend>
+
+            <div class="svarmuligheder">
+              <label for="flad">
+                <input id="flad" type="radio" name="reason" value="flad" checked>
+                Fladt
+              </label>
+
+              <label for="let">
+                <input id="let" type="radio" name="reason" value="let">
+                Let stigning
+              </label>
+
+              <label for="bakket">
+                <input id="bakket" type="radio" name="reason" value="bakket">
+                Bakket
+              </label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <div class="retning">
+            <label for="guidelines">
+              <input id="guidelines" name="guidelines" type="checkbox" value="accepted" required>
+              Jeg accepterer eventets retningslinjer
+            </label>
+          </div>
+          <button class="arm" type="submit">
+            Lav mit løbearmbånd
+          </button>
+        </div>
+      </form>
+      <div class="form-løb">
+        <img src="./imgs/godstemning.webp" alt="god stemning">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>INSTAGRAM: @PACE_PEOPLE</p>
+      <p class="contact">
+        KONTAKT: PACEANDPEOPLE@GMAIL.COM
+      </p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

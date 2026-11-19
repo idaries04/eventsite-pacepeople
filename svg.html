@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interaktiv SVG | Pace & people</title>
+  <link rel="stylesheet" href="./starter.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./imgs/favicon.ico">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="site-logo" href="index.html"> <img src="./imgs/pace_people_logo.webp" alt="Pace & people">
+      </a>
+      <nav class="site-nav">
+        <button popovertarget="menu" type="button">Menu</button>
+        <ul class="menu-list" id="menu" popover>
+          <li><a class="menu-item" href="./index.html" aria-current="page">Forside</a></li>
+          <li><a class="menu-item" href="./svg.html">Program</a></li>
+          <li><a class="menu-item" href="./form.html">Niveau</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="svg-page">
+
+      <h1 class="program1">PROGRAM</h1>
+
+      <section class="svg-layout">
+        <div class="svg-placeholder">
+          <svg viewBox="0 0 439.29 330.15" class="svg">
+            <use class="svg_item-cof" href="./imgs/pace.svg#cof"></use>
+            <use class="svg_item-bun" href="./imgs/pace.svg#bun"></use>
+            <use class="svg_item-t" href="./imgs/pace.svg#t"></use>
+          </svg>
+        </div>
+
+        <article class="panel">
+          <h2>HVAD FÅR DU MED?</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <details open name="program" data-position="cof" id="details-cof">
+                <summary>KAFFE</summary>
+                <div>
+                  <p>Start dagen med en god kop kaffe, der giver dig energi og gør dagen lidt bedre.</p>
+                </div>
+              </details>
+            </div>
+
+            <div class="accordion-item">
+              <details name="program" data-position="bun" id="details-bun">
+                <summary>BMO</summary>
+                <div>
+                  <p>En friskbagt bolle med ost – en klassiker, der altid smager godt.</p>
+                </div>
+              </details>
+            </div>
+
+            <div class="accordion-item">
+              <details name="program" data-position="t" id="details-t">
+                <summary>DEN PERFEKTE T-SHIRT</summary>
+                <div>
+                  <p>Alle deltagere får en officiel T-shirt med i startpakken, så I kan løbe med stil og vise, at I er
+                    en del af
+                    fællesskabet!</p>
+                </div>
+              </details>
+            </div>
+
+          </div>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>INSTAGRAM: @PACE_PEOPLE</p>
+      <p class="contact">KONTAKT: PACEANDPEOPLE@GMAIL.COM</p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
